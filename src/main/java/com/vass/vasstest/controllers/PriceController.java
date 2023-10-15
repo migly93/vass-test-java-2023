@@ -1,9 +1,10 @@
 package com.vass.vasstest.controllers;
 
+import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON_VALUE;
+
 import java.time.LocalDateTime;
 
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,7 +17,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping(value = "/price", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = "/price", produces = APPLICATION_JSON_VALUE)
 @RequiredArgsConstructor
 public class PriceController {
 
